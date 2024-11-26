@@ -40,15 +40,17 @@
 
 ## 02、孤儿院捐赠物资系统功能需求
 
-![](media/document_image_rId4.png)
+![image](https://github.com/user-attachments/assets/6fc9f3a0-5a1b-4a85-b179-25e9efe38f39)
 
 ### 儿童认领流程
 
-![](media/document_image_rId5.png)
+![image](https://github.com/user-attachments/assets/f51d6c73-b249-42e3-984a-c0d4fac18d5e)
+
 
 ### 物资捐赠流程
 
-![](media/document_image_rId6.png)
+![image](https://github.com/user-attachments/assets/63b48d95-65a6-477e-9de4-f809d3a28da6)
+
 
 ## 03、项目部署运行
 
