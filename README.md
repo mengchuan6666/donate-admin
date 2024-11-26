@@ -74,11 +74,10 @@
 
 3.  修改数据库账户配置和文件上传路径
 
-![](media/document_image_rId7.png)
+![image](https://github.com/user-attachments/assets/5b1dd056-ddf9-4a26-a60c-3100df7db71c)
+![image](https://github.com/user-attachments/assets/8c1de099-eaef-416a-930d-2cf000c58f40)
+![image](https://github.com/user-attachments/assets/85486d0a-533c-4794-8c6e-95d4c25b961c)
 
-![](media/document_image_rId8.png)
-
-![](media/document_image_rId9.png)
 
 4.  运行启动类，启动后端项目
 
@@ -88,7 +87,8 @@
 
 - 安装node.js v20.18.0版本: <https://nodejs.org/dist/latest-v20.x/>
 
-- ![](media/document_image_rId11.png)
+- ![image](https://github.com/user-attachments/assets/23869a70-91ca-476d-9acf-ccbb93ebb786)
+
 
 - IDE工具：vscode, hbuider, webstorm均可
 
@@ -104,7 +104,8 @@
 
 后端项目是基于SpringBoot进行构建的，对于SpringBoot的项目，项目结构基本都是固定的，下面是物资捐赠系统的后端项目结构。
 
-![](media/document_image_rId12.png)
+![image](https://github.com/user-attachments/assets/7c5b13ab-b7d5-4e80-b5b6-af44ce7bc7d7)
+
 
 **项目开发的编码顺序：**
 
@@ -128,11 +129,13 @@
 
 物资捐赠系统的前端是基于Vue3.x和TypeScript进行开发的，项目打包工具用的vite，下面是前端项目的目录结构。
 
-![](media/document_image_rId13.png)
+![image](https://github.com/user-attachments/assets/6feb27b4-ff6c-45f0-a91f-3525adb46a87)
+
 
 下图是src的目录结构介绍：
 
-![](media/document_image_rId14.png)
+![image](https://github.com/user-attachments/assets/e3c04f4d-56b1-4730-a960-83474ba2354a)
+
 
 **前端代码的编码顺序：**
 
@@ -150,7 +153,8 @@
 
 物资捐赠系统共设计了15张表用于存储基础数据和业务数据。
 
-![](media/document_image_rId15.png)
+![image](https://github.com/user-attachments/assets/06826fe6-5eb3-4424-85ad-61d269ee78ca)
+
 
 ## 07、儿童信息管理--后端代码编写
 
@@ -158,7 +162,8 @@
 
 **基于的数据表：t_child_info**
 
-![](media/document_image_rId16.png)
+![image](https://github.com/user-attachments/assets/619103e8-07cd-4cd6-b812-f3a37bcca755)
+
 
 **编码开发步骤：**
 
@@ -178,7 +183,8 @@
 
 下图是脚手架项目启动运行后的效果。
 
-![](media/document_image_rId17.png)
+![image](https://github.com/user-attachments/assets/b1c50c56-3643-4241-9cdd-09aa766ed874)
+
 
 下面我们来基于这个脚手架项目开发儿童信息管理的前台代码。
 
@@ -203,7 +209,8 @@ name: 'SystemChildInfo'
 
 ② 在后端项目中添加对应的菜单，配置路由路径和组件路径
 
-![](media/document_image_rId18.png)
+![image](https://github.com/user-attachments/assets/62e781c7-577a-49be-b84d-702da25a045e)
+
 
 ### 2. 实现儿童信息的数据查询功能
 
