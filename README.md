@@ -10,6 +10,10 @@
 
 该项目主要用于孤儿院等一些儿童福利机构，用于发布一些公告、资讯和孤儿信息，用户注册登录以后可以查看孤儿信息，进行领养申请，管理员通过审核以后可以进行领养；用户也可以通过该系统平台进行物资捐赠等。
 
+项目的详细教程和演示在b站：
+
+https://www.bilibili.com/video/BV1y8m8YDEhQ/?spm_id_from=333.1387.homepage.video_card.click&vd_source=e64f225fc5daf048d2687502cb23bb3b
+
 ### 技术架构
 
 **前后端分离**后端：**SpringBoot** + MyBatis + Hutool前端：**Vue3** + Element-Plus + TypeScript + Axios + ECharts数据库： MySQL
