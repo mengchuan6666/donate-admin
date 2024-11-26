@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mengadmin.common.system.mapper.TDonateGoodsMapper">
+
+    <!-- 关联查询sql -->
+    <sql id="selectSql">
+        SELECT a.*,
+        c.dict_data_name donate_type_name,
+        e.dict_data_name audit_status_name
+        FROM t_donate_goods a
+        left join (
+        <include refid="selectDonateTypeDictSql"/>
+        ) c ON a.donate_type = c.dict_data_code
+        LEFT JOIN (
+        <include refid="selectAuditStatusDictSql"/>
+        ) e ON a.audit_status = e.dict_data_code
+        <where>
+            <if test="param.id != null">
+                AND a.id = #{param.id}
+            </if>
+            <if test="param.donateName != null">
+                AND a.donate_name LIKE CONCAT('%', #{param.donateName}, '%')
+            </if>
+            <if test="param.donateType != null">
+                AND a.donate_type LIKE CONCAT('%', #{param.donateType}, '%')
+            </if>
+            <if test="param.donateNumber != null">
+                AND a.donate_number = #{param.donateNumber}
+            </if>
+            <if test="param.donateAccount != null">
+                AND a.donate_account LIKE CONCAT('%', #{param.donateAccount}, '%')
+            </if>
+            <if test="param.donatePersonName != null">
+                AND a.donate_person_name LIKE CONCAT('%', #{param.donatePersonName}, '%')
+            </if>
+            <if test="param.donatePersonPhone != null">
+                AND a.donate_person_phone LIKE CONCAT('%', #{param.donatePersonPhone}, '%')
+            </if>
+            <if test="param.donateGoodsDesc != null">
+                AND a.donate_goods_desc LIKE CONCAT('%', #{param.donateGoodsDesc}, '%')
+            </if>
+            <if test="param.donateTime != null">
+                AND a.donate_time LIKE CONCAT('%', #{param.donateTime}, '%')
+            </if>
+            <if test="param.createTimeStart != null">
+                AND a.create_time &gt;= #{param.createTimeStart}
+            </if>
+            <if test="param.createTimeEnd != null">
+                AND a.create_time &lt;= #{param.createTimeEnd}
+            </if>
+            <if test="param.createUser != null">
+                AND a.create_user LIKE CONCAT('%', #{param.createUser}, '%')
+            </if>
+            <if test="param.auditStatus != null">
+                AND a.audit_status LIKE CONCAT('%', #{param.auditStatus}, '%')
+            </if>
+            <if test="param.auditTime != null">
+                AND a.audit_time LIKE CONCAT('%', #{param.auditTime}, '%')
+            </if>
+            <if test="param.auditUser != null">
+                AND a.audit_user LIKE CONCAT('%', #{param.auditUser}, '%')
+            </if>
+        </where>
+    </sql>
+
+    <!-- 分页查询 -->
+    <select id="selectPageRel" resultType="com.mengadmin.common.system.entity.TDonateGoods">
+        <include refid="selectSql"></include>
+    </select>
+
+    <!-- 查询全部 -->
+    <select id="selectListRel" resultType="com.mengadmin.common.system.entity.TDonateGoods">
+        <include refid="selectSql"></include>
+    </select>
+
+    <!-- 捐赠类型字典查询sql -->
+    <sql id="selectDonateTypeDictSql">
+        SELECT ta.*
+        FROM sys_dictionary_data ta
+                 LEFT JOIN sys_dictionary tb
+                           ON ta.dict_id = tb.dict_id
+                               AND tb.deleted = 0
+        WHERE ta.deleted = 0
+          AND tb.dict_code = 'donateType'
+    </sql>
+
+    <!-- 审核状态字典查询sql -->
+    <sql id="selectAuditStatusDictSql">
+        SELECT ta.*
+        FROM sys_dictionary_data ta
+                 LEFT JOIN sys_dictionary tb
+                           ON ta.dict_id = tb.dict_id
+                               AND tb.deleted = 0
+        WHERE ta.deleted = 0
+          AND tb.dict_code = 'auditStatus'
+    </sql>
+</mapper>
