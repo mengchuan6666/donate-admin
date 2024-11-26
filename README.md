@@ -16,7 +16,7 @@ https://www.bilibili.com/video/BV1y8m8YDEhQ/?spm_id_from=333.1387.homepage.video
 
 ### 技术架构
 
-**前后端分离**后端：**SpringBoot** + MyBatis + Hutool前端：**Vue3** + Element-Plus + TypeScript + Axios + ECharts数据库： MySQL
+**前后端分离**后端：**SpringBoot** + MyBatis + Hutool。前端：**Vue3** + Element-Plus + TypeScript + Axios + ECharts数据库： MySQL
 
 ### 主要功能
 
