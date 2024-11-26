@@ -19,6 +19,18 @@ https://mp.weixin.qq.com/s/hOEaxMuQdqFjss2YIkJ7Nw?token=1934373140&lang=zh_CN
 
 ![1732627772995](https://github.com/user-attachments/assets/05c0f4bd-750b-4a03-a76b-6eed0fdf048b)
 
+![image](https://github.com/user-attachments/assets/54c719f9-f7db-4803-b1c1-a312ca93f9b2)
+
+![image](https://github.com/user-attachments/assets/c694f22b-3df7-457d-bf62-ecad3eb18203)
+
+![image](https://github.com/user-attachments/assets/8316cfba-f482-4f20-b692-78b4a9c8f03d)
+
+![image](https://github.com/user-attachments/assets/a1526941-6838-4453-9710-9fce953f52da)
+
+![image](https://github.com/user-attachments/assets/f058436f-66a0-4b87-9a92-aa60af54c7f1)
+
+![image](https://github.com/user-attachments/assets/c5c7759a-0785-40d0-adfd-bdda20d9e552)
+
 ### 技术架构
 
 **前后端分离**后端：**SpringBoot** + MyBatis + Hutool。前端：**Vue3** + Element-Plus + TypeScript + Axios + ECharts数据库： MySQL
